@@ -1,0 +1,18 @@
+// Variables
+
+@mixin transition($property) {
+  -webkit-transform: $property 100ms ease-in;
+  -ms-transform: $property 100ms ease-in;
+  transform: $property 100ms ease-in;
+}
+
+@mixin constraint {
+  padding-left: $main-padding * 2;
+  padding-right: $main-padding * 2;
+  margin: 0 auto;
+}
+
+@mixin margin-bottom($number) {
+  margin-bottom: #{$number * $leading + "px"};
+  margin-bottom: #{$number * $line-height + "rem"};
+}

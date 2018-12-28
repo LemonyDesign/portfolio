@@ -1,0 +1,29 @@
+@import "../base/_normalize.scss";
+@import "../base/_variables.scss";
+@import "../base/_mixins.scss";
+
+.home .panel {
+  color: $background-color;
+}
+
+.portfolio {
+  background: $background-color;
+
+  &__listitem {
+    margin-bottom: $main-padding;
+    img {
+      margin-bottom: $main-padding;
+    }
+    h2 {
+      font-family: $heading-font-family;
+      @include constraint();
+    }
+    p {
+      @include constraint();
+      &:last-child:after {
+        display: block;
+        content: "===";
+      }
+    }
+  }
+}

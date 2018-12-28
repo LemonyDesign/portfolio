@@ -1,0 +1,109 @@
+@import "../base/_normalize.scss";
+@import "../base/_variables.scss";
+@import "../base/_mixins.scss";
+
+.siteheader {
+  background-color: $background-color;
+  text-align: center;
+  padding-top: $main-padding * 2;
+  padding-bottom: $main-padding * 0.5;
+  @include transition(background-color);
+}
+.navmain {
+  display: flex;
+  &__nav {
+    color: lighten($primary-color, 20%);
+    flex: 1;
+    display: flex;
+    font-size: 2rem;
+  }
+  &__nav.active {
+    color: $text-color;
+  }
+  .nav--left {
+    justify-content: flex-start;
+    align-items: center;
+    order: 1;
+  }
+  .nav--right {
+    justify-content: flex-end;
+    align-items: center;
+    order: 3;
+  }
+
+  &__link {
+    display: flex;
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+  }
+  &__title {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    i {
+      font-style: normal;
+    }
+  }
+  &__name {
+    color: $text-color;
+  }
+  &__descriptor {
+    color: lighten($primary-color, 20%);
+  }
+  .name--first {
+    order: 1;
+  }
+  .descriptor--code {
+    order: 2;
+    padding-left: 2px;
+    &:before {
+      position: relative;
+      top: -10%;
+      content: ":";
+    }
+  }
+  .descriptor--design {
+    order: 3;
+    padding-right: 2px;
+    &:after {
+      position: relative;
+      top: -10%;
+      content: ":";
+    }
+  }
+  .name--last {
+    order: 4;
+  }
+}
+
+// HOME
+.home {
+  .siteheader {
+    background-color: $black;
+  }
+  .navmain {
+    &__nav {
+      color: $primary-color;
+    }
+
+    &__nav.active {
+      color: lighten($primary-color, 50%);
+    }
+    &__name {
+      color: $background-color;
+    }
+    &__descriptor {
+      color: $primary-color;
+    }
+  }
+}
