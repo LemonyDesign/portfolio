@@ -30,7 +30,7 @@
     order: 3;
   }
 
-  &__link {
+  &__wrapper {
     display: flex;
     flex: 7;
     justify-content: center;
@@ -59,6 +59,10 @@
   &__descriptor {
     color: lighten($primary-color, 20%);
   }
+  &__descriptor.active {
+    color: $primary-color;
+  }
+
   .name--first {
     order: 1;
   }
@@ -80,6 +84,7 @@
       content: ":";
     }
   }
+
   .name--last {
     order: 4;
   }
@@ -142,7 +147,7 @@
 }
 
 @media (min-width: 480px) {
-  .navmain__link {
+  .navmain__wrapper {
     flex: 4;
   }
 }
@@ -152,7 +157,7 @@
     margin-left: 10%;
     margin-right: 10%;
   }
-  .navmain__link {
+  .navmain__wrapper {
     flex: 3;
     padding: 0 2vw;
   }
@@ -167,7 +172,7 @@
     padding-top: $main-padding * 2;
     padding-bottom: $main-padding * 2;
   }
-  .navmain__link {
+  .navmain__wrapper {
     flex: 2.5;
   }
 }

@@ -19,18 +19,39 @@ class Nav extends React.Component {
     return (
       <div className="siteheader">
         <header className="navmain constraint">
-          <NavLink to="/" activeClassName="active" className="navmain__link">
+          <div className="navmain__wrapper">
             <h1 className="navmain__title">
-              <span className="navmain__name name--first">Melanie</span>
-              <span className="navmain__name name--last">Ashby</span>
-              <span className="navmain__descriptor descriptor--code">
+              <NavLink
+                to="/"
+                activeClassName="active"
+                className="navmain__name name--first"
+              >
+                Melanie
+              </NavLink>
+              <NavLink
+                to="/"
+                activeClassName="active"
+                className="navmain__name name--last"
+              >
+                Ashby
+              </NavLink>
+
+              <NavLink
+                to="/code"
+                activeClassName="active"
+                className="navmain__descriptor descriptor--code"
+              >
                 {this.joinArr(arrCode)}
-              </span>
-              <span className="navmain__descriptor descriptor--design">
+              </NavLink>
+              <NavLink
+                to="/design"
+                activeClassName="active"
+                className="navmain__descriptor descriptor--design"
+              >
                 {this.joinArr(arrDesign)}
-              </span>
+              </NavLink>
             </h1>
-          </NavLink>
+          </div>
 
           <NavLink
             to="/design"
