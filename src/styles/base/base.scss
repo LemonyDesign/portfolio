@@ -7,6 +7,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  background: $black;
+  height: 100%;
 }
 *,
 *:before,
@@ -27,11 +29,36 @@ body {
   line-height: 1.5;
   color: $text-color;
   -webkit-font-smoothing: antialiased;
-  @include transition(background-color);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
-body.home {
-  background: $black;
+.sitefooter {
+  padding: $main-padding * 2 $main-padding;
+  text-align: center;
+  background-color: $background-color;
+  color: lighten($text-color, 30%);
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
+
+.constraint {
+  padding-left: $main-padding * 2;
+  padding-right: $main-padding * 2;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
+.project img {
+  margin: $main-padding 0;
+}
+
+/* ==== TYPOGRAPHY ==== */
+
 h1,
 h2,
 h3,
@@ -42,38 +69,35 @@ h6 {
   font-weight: 600;
   line-height: 1.2;
 }
+p {
+  margin: 0 0 $main-padding;
+}
 a,
 a:hover {
   color: $primary-color;
   text-decoration: none;
 }
 
-.constraint {
-  padding-left: $main-padding * 2;
-  padding-right: $main-padding * 2;
-  margin: 0 auto;
-}
+/* ==== MODULES ==== */
 
 .panel {
-  font-size: 1.3rem;
-  margin-bottom: $main-padding * 1.5;
+  font-size: 1.125rem;
+  padding-bottom: $main-padding * 2;
   &__title {
     font-family: "arno-pro-display", serif;
     font-weight: 600;
     font-size: 1.7rem;
   }
-
+  p:last-child {
+    margin-bottom: 0;
+  }
   p:last-child:after {
     display: block;
     content: "===";
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-style: none;
-}
+/* ==== HELPER CLASSES ==== */
 
 /* ---- Nav menus ---- */
 .menu--settings {
@@ -97,27 +121,69 @@ img {
   border: 0;
 }
 
-/* ==== LAYOUT ==== */
+/* ==== MEDIA QUERIES ==== */
 
-// MEDIA QUERIES
-@media (min-width: 768px) {
+@media (max-width: 320px) {
 }
 
-@media (min-width: 960px) {
-  .constraint {
-    max-width: 930px;
+@media (min-width: 480px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .panel {
+    margin-top: 2.5%;
+    margin-bottom: 0.5%;
+  }
+
+  .project {
+    margin-top: 5%;
+    margin-bottom: 0.5%;
+  }
+
+  .panel,
+  .project {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
-@media (min-width: 1200px) {
-  font-size: 112.5%;
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  body {
+    font-size: 112.5%;
+  }
+  .panel,
+  .project {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
   .constraint {
     max-width: 1170px;
+  }
+  .panel {
+    font-size: 1.3125rem;
+  }
+  .panel,
+  .project {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
 @media (min-width: 1440px) {
+  /* hi-res laptops and desktops */
   .constraint {
     max-width: 1410px;
+  }
+  .panel,
+  .project {
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }

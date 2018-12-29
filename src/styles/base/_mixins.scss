@@ -12,6 +12,12 @@
   margin: 0 auto;
 }
 
+@mixin reverseconstraint {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
 @mixin margin-bottom($number) {
   margin-bottom: #{$number * $leading + "px"};
   margin-bottom: #{$number * $line-height + "rem"};

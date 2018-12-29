@@ -5,9 +5,8 @@
 .siteheader {
   background-color: $background-color;
   text-align: center;
-  padding-top: $main-padding * 2;
-  padding-bottom: $main-padding * 0.5;
-  @include transition(background-color);
+  padding-top: $main-padding * 1.5;
+  padding-bottom: $main-padding * 1.5;
 }
 .navmain {
   display: flex;
@@ -33,13 +32,13 @@
 
   &__link {
     display: flex;
-    flex: 4;
+    flex: 7;
     justify-content: center;
     align-items: center;
     order: 2;
   }
   &__title {
-    font-family: "futura-pt", sans-serif;
+    font-family: $brand-font-family;
     font-weight: 600;
     font-style: normal;
     line-height: 1;
@@ -87,23 +86,109 @@
 }
 
 // HOME
-.home {
-  .siteheader {
-    background-color: $black;
+.home .navmain {
+  &__nav {
+    color: $primary-color;
   }
-  .navmain {
-    &__nav {
-      color: $primary-color;
-    }
+  &__nav.active {
+    color: lighten($primary-color, 50%);
+  }
+  &__name {
+    color: $background-color;
+  }
+  &__descriptor {
+    color: $primary-color;
+  }
+}
 
-    &__nav.active {
-      color: lighten($primary-color, 50%);
-    }
-    &__name {
-      color: $background-color;
-    }
-    &__descriptor {
-      color: $primary-color;
-    }
+// ITEMS
+.portfolio-item .navmain {
+  &__nav {
+    color: $text-color;
+  }
+  &__name {
+    color: $background-color;
+  }
+  &__descriptor {
+    color: $text-color;
+  }
+}
+
+.home .siteheader {
+  background-color: $black;
+}
+.itemup .siteheader {
+  background-color: #4a494e;
+}
+.itemcasket .siteheader {
+  background-color: #575cc2;
+}
+.itemnpl .siteheader {
+  background-color: #a62c35;
+}
+.itemaldingbourne .siteheader {
+  background-color: #2cb4b4;
+}
+.itemfarmer .siteheader {
+  background-color: #7c8361;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media (max-width: 320px) {
+  .navmain__title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .navmain__link {
+    flex: 4;
+  }
+}
+
+@media (min-width: 600px) {
+  .navmain {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .navmain__link {
+    flex: 3;
+    padding: 0 2vw;
+  }
+}
+
+@media (min-width: 801px) {
+  .navmain {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .siteheader {
+    padding-top: $main-padding * 2;
+    padding-bottom: $main-padding * 2;
+  }
+  .navmain__link {
+    flex: 2.5;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navmain {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .navmain__link {
+    flex: 2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navmain {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .navmain__link {
+    flex: 1.5;
   }
 }
