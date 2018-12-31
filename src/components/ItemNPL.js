@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import "../styles/base/base.scss";
+import "../styles/base/projects.scss";
 
 class ItemNPL extends React.Component {
   componentDidMount() {
@@ -16,9 +17,25 @@ class ItemNPL extends React.Component {
       <React.Fragment>
         <Nav />
         <main className="main">
-          <img src="../../static/pi-ws-up.jpg" />
           <section className="constraint">
-            <h2 className="panel__title">NPL website</h2>
+            <header className="project__header">
+              <h2 className="project__title">Northern Poetry Library</h2>
+
+              <dl className="project__refs">
+                <dt className="a">Date</dt>
+                <dd className="a2">Spring 2018</dd>
+
+                <dt className="b">Client</dt>
+                <dd className="b2">Taylor McKenzie / UP</dd>
+
+                <dt className="c">URL</dt>
+                <dd className="c2">
+                  <a href="http://helloup.co.uk">helloup.co.uk</a>
+                </dd>
+              </dl>
+            </header>
+
+            <h3>Brief</h3>
             <p>This to be the page for NPL website</p>
           </section>
         </main>

@@ -123,19 +123,19 @@
   background-color: $black;
 }
 .itemup .siteheader {
-  background-color: #4a494e;
+  background-color: $itemup;
 }
 .itemcasket .siteheader {
-  background-color: #575cc2;
+  background-color: $itemcasket;
 }
 .itemnpl .siteheader {
-  background-color: #a62c35;
+  background-color: $itemnpl;
 }
 .itemaldingbourne .siteheader {
-  background-color: #2cb4b4;
+  background-color: $itemaldingbourne;
 }
 .itemfarmer .siteheader {
-  background-color: #7c8361;
+  background-color: $itemfarmer;
 }
 
 /* ==== MEDIA QUERIES ==== */
@@ -182,18 +182,24 @@
     margin-left: 20%;
     margin-right: 20%;
   }
-  .navmain__link {
+  .navmain__wrapper {
     flex: 2;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .navmain {
     margin-left: 25%;
     margin-right: 25%;
   }
 
-  .navmain__link {
+  .navmain__wrapper {
     flex: 1.5;
+  }
+}
+
+@media (min-width: 1920px) {
+  .navmain__wrapper {
+    flex: 1.25;
   }
 }

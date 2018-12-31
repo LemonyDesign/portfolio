@@ -53,9 +53,6 @@ img {
   height: auto;
   border-style: none;
 }
-.project img {
-  margin: $main-padding 0;
-}
 
 /* ==== TYPOGRAPHY ==== */
 
@@ -135,15 +132,6 @@ a:hover {
   .panel {
     margin-top: 2.5%;
     margin-bottom: 0.5%;
-  }
-
-  .project {
-    margin-top: 5%;
-    margin-bottom: 0.5%;
-  }
-
-  .panel,
-  .project {
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -154,8 +142,7 @@ a:hover {
   body {
     font-size: 112.5%;
   }
-  .panel,
-  .project {
+  .panel {
     margin-left: 15%;
     margin-right: 15%;
   }
@@ -164,26 +151,29 @@ a:hover {
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   .constraint {
-    max-width: 1170px;
+    max-width: 995px;
   }
   .panel {
     font-size: 1.3125rem;
-  }
-  .panel,
-  .project {
     margin-left: 20%;
     margin-right: 20%;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   /* hi-res laptops and desktops */
   .constraint {
-    max-width: 1410px;
+    max-width: 1336px;
   }
-  .panel,
-  .project {
+  .panel {
     margin-left: 25%;
     margin-right: 25%;
+  }
+}
+
+@media (min-width: 1920px) {
+  /* bigguns */
+  .constraint {
+    max-width: 1890px;
   }
 }

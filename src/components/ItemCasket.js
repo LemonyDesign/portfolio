@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import "../styles/base/base.scss";
+import "../styles/base/projects.scss";
 
 class ItemCasket extends React.Component {
   componentDidMount() {

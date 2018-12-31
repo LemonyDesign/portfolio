@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import "../styles/base/base.scss";
+import "../styles/base/projects.scss";
 
 class ItemUp extends React.Component {
   componentDidMount() {
@@ -17,9 +18,25 @@ class ItemUp extends React.Component {
         <Nav />
         <main className="main">
           <section className="constraint project">
-            <h2 className="panel__title">UP Agency</h2>
+            <header className="project__header">
+              <h2 className="project__title">UP Agency</h2>
+
+              <dl className="project__refs">
+                <dt className="a">Date</dt>
+                <dd className="a2">Spring 2018</dd>
+
+                <dt className="b">Client</dt>
+                <dd className="b2">Taylor McKenzie / UP</dd>
+
+                <dt className="c">URL</dt>
+                <dd className="c2">
+                  <a href="http://helloup.co.uk">helloup.co.uk</a>
+                </dd>
+              </dl>
+            </header>
 
             <h3>Brief</h3>
+
             <p>
               Lemony Design's long-standing client, short-story advocate and
               jewellery afficionado Joanna Sterling, sought a recent redesign of

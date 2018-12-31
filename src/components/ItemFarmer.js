@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import "../styles/base/base.scss";
+import "../styles/base/projects.scss";
 
 class ItemFarmer extends React.Component {
   componentDidMount() {

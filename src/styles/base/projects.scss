@@ -1,0 +1,143 @@
+@import "_normalize.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/* ==== PROJECTS ==== */
+
+.project {
+  img {
+    margin: $main-padding 0;
+  }
+  &__header {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__title {
+    width: 100%;
+  }
+  &__refs {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-flow: row wrap;
+
+    dt {
+      width: 20%;
+    }
+    dd {
+      margin: 0;
+      width: 80%;
+    }
+  }
+}
+.itemup {
+  dt {
+    color: $itemup;
+  }
+  dd:after {
+    color: $itemup;
+  }
+}
+.itemnpl {
+  dt {
+    color: $itemnpl;
+  }
+  dd:after {
+    color: $itemnpl;
+  }
+}
+.itemaldingbourne {
+  dt {
+    color: $itemaldingbourne;
+  }
+  dd:after {
+    color: $itemaldingbourne;
+  }
+}
+
+.itemfarmer dt {
+  color: $itemaldingbourne;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media (max-width: 320px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 600px) {
+  .project {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 0.5%;
+  }
+}
+
+@media (min-width: 801px) {
+  .project {
+    margin-left: 15%;
+    margin-right: 15%;
+    &__header {
+      text-align: center;
+    }
+    &__refs {
+      display: grid;
+      text-align: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 2fr;
+
+      dt {
+        width: auto;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+      dd {
+        width: auto;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        &:after {
+          display: block;
+          content: "===";
+        }
+      }
+      .a,
+      .a2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+      }
+      .b,
+      .b2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+      }
+      .c,
+      .c2 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .project {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .project {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@media (min-width: 1920px) {
+  /* bigguns */
+}
