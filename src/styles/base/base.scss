@@ -41,6 +41,21 @@ body {
   grid-row-start: 2;
   grid-row-end: 3;
 }
+.itemup .sitefooter {
+  color: $itemup;
+}
+.itemcasket .sitefooter {
+  color: $itemcasket;
+}
+.itemaldingbourne .sitefooter {
+  color: $itemaldingbourne;
+}
+.itemfarmer .sitefooter {
+  color: $itemfarmer;
+}
+.itemnpl .sitefooter {
+  color: $itemnpl;
+}
 
 .constraint {
   padding-left: $main-padding * 2;
@@ -73,6 +88,7 @@ a,
 a:hover {
   color: $primary-color;
   text-decoration: none;
+  @include transition(color);
 }
 
 /* ==== MODULES ==== */

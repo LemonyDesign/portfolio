@@ -21,10 +21,10 @@ class Home extends React.Component {
           <section className="panel constraint">
             <p>
               A designer of more than 10 years, I am a recent JavaScript
-              bootcamp graduate. I admire &amp; practice simple, elegant UI
+              bootcamp graduate. I practice &amp; admire simple, elegant UI
               design, and I am learning to craft eloquent code that brings
               functional life to the creation of beautiful, workable interfaces
-              that are a <strong>pleasure to use</strong>.
+              that are a pleasure to use .
             </p>
           </section>
 

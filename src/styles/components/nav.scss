@@ -56,12 +56,6 @@
   &__name {
     color: $text-color;
   }
-  &__descriptor {
-    color: lighten($primary-color, 20%);
-  }
-  &__descriptor.active {
-    color: $primary-color;
-  }
 
   .name--first {
     order: 1;
@@ -93,7 +87,7 @@
 // HOME
 .home .navmain {
   &__nav {
-    color: $primary-color;
+    color: lighten($primary-color, 20%);
   }
   &__nav.active {
     color: lighten($primary-color, 50%);
@@ -106,36 +100,88 @@
   }
 }
 
-// ITEMS
-.portfolio-item .navmain {
+// PAGES
+
+.code .navmain,
+.design .navmain {
   &__nav {
+    color: $primary-color;
+  }
+  &__nav.active {
     color: $text-color;
   }
   &__name {
-    color: $background-color;
+    color: $text-color;
   }
   &__descriptor {
-    color: $text-color;
+    color: lighten($primary-color, 20%);
+  }
+}
+
+// ITEMS
+.portfolio-item .navmain {
+  &__name {
+    color: $background-color;
   }
 }
 
 .home .siteheader {
   background-color: $black;
 }
-.itemup .siteheader {
-  background-color: $itemup;
+.itemup {
+  .siteheader {
+    background-color: $itemup;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemup, 20%);
+    }
+  }
 }
-.itemcasket .siteheader {
-  background-color: $itemcasket;
+.itemcasket {
+  .siteheader {
+    background-color: $itemcasket;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemcasket, 20%);
+    }
+  }
 }
-.itemnpl .siteheader {
-  background-color: $itemnpl;
+.itemnpl {
+  .siteheader {
+    background-color: $itemnpl;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemnpl, 20%);
+    }
+  }
 }
-.itemaldingbourne .siteheader {
-  background-color: $itemaldingbourne;
+.itemaldingbourne {
+  .siteheader {
+    background-color: $itemaldingbourne;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemaldingbourne, 20%);
+    }
+  }
 }
-.itemfarmer .siteheader {
-  background-color: $itemfarmer;
+.itemfarmer {
+  .siteheader {
+    background-color: $itemfarmer;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemfarmer, 20%);
+    }
+  }
 }
 
 /* ==== MEDIA QUERIES ==== */

@@ -5,9 +5,6 @@
 /* ==== PROJECTS ==== */
 
 .project {
-  img {
-    margin: $main-padding 0;
-  }
   &__header {
     text-align: center;
     justify-content: center;
@@ -31,30 +28,35 @@
       width: 80%;
     }
   }
-}
-.itemup {
-  dt {
-    color: $itemup;
+
+  &__section1 {
+    background-color: lighten($itemcasket, 40%);
+    padding: $main-padding * 1.5 0 $main-padding * 2;
+    margin: $main-padding * 2 0;
   }
-  dd:after {
-    color: $itemup;
-  }
-}
-.itemnpl {
-  dt {
-    color: $itemnpl;
-  }
-  dd:after {
-    color: $itemnpl;
+
+  &__subhead-brief,
+  &__subhead-design,
+  &__subhead-code {
+    font-family: $brand-font-family;
+    text-transform: uppercase;
+    text-align: left;
   }
 }
-.itemaldingbourne {
-  dt {
-    color: $itemaldingbourne;
-  }
-  dd:after {
-    color: $itemaldingbourne;
-  }
+.itemup dt {
+  color: $itemup;
+}
+
+.itemcasket dt {
+  color: $itemcasket;
+}
+
+.itemnpl dt {
+  color: $itemnpl;
+}
+
+.itemaldingbourne dt {
+  color: $itemaldingbourne;
 }
 
 .itemfarmer dt {
@@ -71,8 +73,6 @@
 
 @media (min-width: 600px) {
   .project {
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 0.5%;
   }
@@ -80,8 +80,6 @@
 
 @media (min-width: 801px) {
   .project {
-    margin-left: 15%;
-    margin-right: 15%;
     &__header {
       text-align: center;
     }
@@ -103,6 +101,7 @@
         &:after {
           display: block;
           content: "===";
+          color: $primary-color;
         }
       }
       .a,
@@ -121,21 +120,40 @@
         grid-column-end: 3;
       }
     }
+    &__brief {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__content {
+      width: 70%;
+    }
+    &__image {
+      width: 25%;
+      img {
+        width: 200px;
+      }
+    }
+
+    &__section2 {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__code,
+    &__design {
+      width: 46%;
+    }
   }
 }
 
 @media (min-width: 1025px) {
   .project {
-    margin-left: 20%;
-    margin-right: 20%;
+    &__title {
+      font-size: 2rem;
+    }
   }
 }
 
 @media (min-width: 1366px) {
-  .project {
-    margin-left: 25%;
-    margin-right: 25%;
-  }
 }
 
 @media (min-width: 1920px) {

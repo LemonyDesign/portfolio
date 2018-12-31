@@ -1,9 +1,12 @@
 // Variables
 
-@mixin transition($property) {
-  -webkit-transform: $property 100ms ease-in;
-  -ms-transform: $property 100ms ease-in;
-  transform: $property 100ms ease-in;
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 200ms, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
 }
 
 @mixin constraint {
