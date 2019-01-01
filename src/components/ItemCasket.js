@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
+import ZoomImage from "../components/ZoomImage";
 import "../styles/base/base.scss";
 import "../styles/base/projects.scss";
 
@@ -12,6 +13,7 @@ class ItemCasket extends React.Component {
   componentWillUnmount() {
     document.body.classList.remove("portfolio-item", "itemcasket");
   }
+
   render() {
     return (
       <React.Fragment>
@@ -48,7 +50,11 @@ class ItemCasket extends React.Component {
                 </p>
               </div>
               <aside className="project__image">
-                <img src="../../static/example-sketch.jpg" />
+                <ZoomImage
+                  imageWidth={200}
+                  imageHeight={200}
+                  src="../../static/example-sketch.jpg"
+                />
               </aside>
             </div>
           </section>

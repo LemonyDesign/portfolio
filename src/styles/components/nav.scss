@@ -238,14 +238,10 @@
     margin-left: 25%;
     margin-right: 25%;
   }
-
-  .navmain__wrapper {
-    flex: 1.5;
-  }
 }
 
 @media (min-width: 1920px) {
   .navmain__wrapper {
-    flex: 1.25;
+    flex: 1.2;
   }
 }

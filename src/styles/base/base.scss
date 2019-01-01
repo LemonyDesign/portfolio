@@ -81,6 +81,7 @@ h6 {
   font-weight: 600;
   line-height: 1.2;
 }
+
 p {
   margin: 0 0 $main-padding;
 }
@@ -151,6 +152,12 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
   }
+  h2 {
+    font-size: 1.563rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 801px) {
@@ -174,12 +181,19 @@ a:hover {
     margin-left: 20%;
     margin-right: 20%;
   }
+  h2 {
+    font-size: 1.953rem;
+  }
 }
 
 @media (min-width: 1366px) {
   /* hi-res laptops and desktops */
+
+  body {
+    font-size: 125%;
+  }
   .constraint {
-    max-width: 1336px;
+    max-width: 1080px;
   }
   .panel {
     margin-left: 25%;
@@ -189,7 +203,12 @@ a:hover {
 
 @media (min-width: 1920px) {
   /* bigguns */
-  .constraint {
-    max-width: 1890px;
+
+  .panel {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  h2 {
+    font-size: 2.441rem;
   }
 }
