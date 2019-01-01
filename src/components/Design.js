@@ -16,9 +16,9 @@ class Design extends React.Component {
       <React.Fragment>
         <Nav />
         <main className="main">
-          <section className="constraint project">
-            <header className="project__header">
-              <h2 className="project__title">Design</h2>
+          <section className="panel constraint">
+            <header className="panel__header">
+              <h2 className="panel__title">Design</h2>
             </header>
             <p>
               A designer of more than 10 years, I am a recent JavaScript

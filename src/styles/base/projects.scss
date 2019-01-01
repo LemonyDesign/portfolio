@@ -34,7 +34,7 @@
   }
 
   &__section1 {
-    background-color: lighten($primary-color, 40%);
+    background-color: lighten($primary-color, 50%);
     padding-top: $main-padding;
     padding-bottom: $main-padding;
     margin: $main-padding * 2 0;
@@ -47,57 +47,40 @@
     text-transform: uppercase;
     text-align: left;
   }
+
+  .frame {
+    background-color: lighten($primary-color, 50%);
+  }
 }
 
 // project-specific colours
 
-.itemup {
-  dt {
-    color: $itemup;
-  }
-  .frame,
-  .project__section1 {
-    background-color: lighten($itemup, 40%);
-  }
-}
-.itemcasket {
-  dt {
-    color: $itemcasket;
-  }
-  .frame,
-  .project__section1 {
-    background-color: lighten($itemcasket, 40%);
-  }
+.itemup dt {
+  color: $itemup;
 }
 
-.itemnpl {
-  dt {
-    color: $itemnpl;
-  }
-  .frame,
-  .project__section1 {
-    background-color: lighten($itemnpl, 40%);
-  }
+.itemcasket dt {
+  color: $itemcasket;
 }
 
-.itemaldingbourne {
-  dt {
-    color: $itemaldingbourne;
-  }
-  .frame,
-  .project__section1 {
-    background-color: lighten($itemaldingbourne, 40%);
-  }
+.itemnpl dt {
+  color: $itemnpl;
 }
 
-.itemfarmer {
-  dt {
-    color: $itemfarmer;
-  }
-  .frame,
-  .project__section1 {
-    background-color: lighten($itemfarmer, 40%);
-  }
+.itemaldingbourne dt {
+  color: $itemaldingbourne;
+}
+
+.itemfarmer dt {
+  color: $itemfarmer;
+}
+
+.itempoem dt {
+  color: $itempoem;
+}
+
+.itemlucion dt {
+  color: $itemlucion;
 }
 
 /* ==== MEDIA QUERIES ==== */

@@ -128,6 +128,18 @@
 .home .siteheader {
   background-color: $black;
 }
+.itempoem {
+  .siteheader {
+    background-color: $itempoem;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itempoem, 20%);
+    }
+  }
+}
+
 .itemup {
   .siteheader {
     background-color: $itemup;
@@ -180,6 +192,18 @@
     &__nav,
     &__descriptor {
       color: darken($itemfarmer, 20%);
+    }
+  }
+}
+
+.itemlucion {
+  .siteheader {
+    background-color: $itemlucion;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemlucion, 20%);
     }
   }
 }

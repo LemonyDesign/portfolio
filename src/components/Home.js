@@ -16,20 +16,59 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <div className="ribbon">Made with React</div>
         <Nav />
         <main className="main">
           <section className="panel constraint">
+            <header className="panel__header">
+              <h2 className="panel__title">
+                There are two sides to every coin&hellip;
+              </h2>
+            </header>
             <p>
-              A designer of more than 10 years, I am a recent JavaScript
-              bootcamp graduate. I practice &amp; admire simple, elegant UI
-              design, and I am learning to craft eloquent code that brings
-              functional life to the creation of beautiful, workable interfaces
-              that are a pleasure to use .
+              A designer of more than 10 years, I am a recent FullStack /
+              JavaScript bootcamp graduate. I practice and admire simple,
+              elegant UI design, and I am learning to craft eloquent code using
+              frontend and backend technologies like React (with Redux) and Node
+              that bring functional life to the creation of beautiful, workable
+              interfaces that are a pleasure to use.
             </p>
           </section>
 
           <section className="portfolio">
             <ul className="portfolio__list menu--settings">
+              <li className="portfolio__listitem">
+                <div className="ribbon">Made with React</div>
+                <NavLink
+                  to="/poem-north"
+                  activeClassName="active"
+                  className="portfolio__link"
+                >
+                  <img src="../../static/pi-ws-pon.jpg" />
+                  <h2 className="portfolio__title">Poem of the North</h2>
+                  <p>
+                    Project celebrating 50 Years of the Northern Poetry Library,
+                    with competition and digital platform built to display a
+                    growing poem.
+                  </p>
+                </NavLink>
+              </li>
+
+              <li className="portfolio__listitem">
+                <NavLink
+                  to="/lucion"
+                  activeClassName="active"
+                  className="portfolio__link"
+                >
+                  <img src="../../static/pi-ws-lucion.jpg" />
+                  <h2 className="portfolio__title">Lucion Services</h2>
+                  <p>
+                    Rework user journeys, functionality and design of website
+                    for growing risk assessment company
+                  </p>
+                </NavLink>
+              </li>
+
               <li className="portfolio__listitem">
                 <NavLink
                   to="/up-agency"
@@ -56,8 +95,8 @@ class Home extends React.Component {
                     The Casket of Fictional Delights
                   </h2>
                   <p>
-                    Podcasting, publication and competitions platform for flash
-                    fiction and short story content.
+                    International podcasting, publication and competitions
+                    platform for flash fiction and short story content.
                   </p>
                 </NavLink>
               </li>
@@ -70,8 +109,9 @@ class Home extends React.Component {
                   <img src="../../static/pi-ws-npl.jpg" />
                   <h2 className="portfolio__title">Northern Poetry Library</h2>
                   <p>
-                    Celebrating 50 years of the Northern Poetry Library in
-                    Northumberland.
+                    Part of a 2-year Heritage Lottery and Northumberland County
+                    Council project to bring new life to a special public
+                    library collection.
                   </p>
                 </NavLink>
               </li>

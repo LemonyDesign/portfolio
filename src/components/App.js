@@ -5,6 +5,8 @@ import Footer from "../components/Footer";
 import Home from "../components/Home";
 import Code from "../components/Code";
 import Design from "../components/Design";
+import ItemPoem from "../components/ItemPoem";
+import ItemLucion from "../components/ItemLucion";
 import ItemUp from "../components/ItemUp";
 import ItemCasket from "../components/ItemCasket";
 import ItemAldingbourne from "../components/ItemAldingbourne";
@@ -29,6 +31,16 @@ function App() {
                 <Route exact path="/" component={Home} key="home" />
                 <Route path="/code" component={Code} key="code" />
                 <Route path="/design" component={Design} key="design" />
+                <Route
+                  path="/poem-north"
+                  component={ItemPoem}
+                  key="item-poem"
+                />
+                <Route
+                  path="/lucion"
+                  component={ItemLucion}
+                  key="item-lucion"
+                />
                 <Route path="/up-agency" component={ItemUp} key="item-up" />
                 <Route
                   path="/the-casket"

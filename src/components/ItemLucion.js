@@ -4,22 +4,23 @@ import ZoomImage from "../components/ZoomImage";
 import "../styles/base/base.scss";
 import "../styles/base/projects.scss";
 
-class ItemUp extends React.Component {
+class ItemLucion extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
-    document.body.classList.add("portfolio-item", "itemup");
+    document.body.classList.add("portfolio-item", "itemlucion");
   }
 
   componentWillUnmount() {
-    document.body.classList.remove("portfolio-item", "itemup");
+    document.body.classList.remove("portfolio-item", "itemlucion");
   }
+
   render() {
     return (
       <React.Fragment>
         <Nav />
         <main className="main project">
           <header className="project__header constraint">
-            <h2 className="project__title">UP Motion Graphics Agency</h2>
+            <h2 className="project__title">Lucion Services</h2>
 
             <dl className="project__refs">
               <dt className="a">Date</dt>
@@ -102,4 +103,4 @@ class ItemUp extends React.Component {
   }
 }
 
-export default ItemUp;
+export default ItemLucion;
