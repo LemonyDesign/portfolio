@@ -8,6 +8,20 @@
   margin-top: $main-padding;
   margin-bottom: $main-padding;
 
+  a {
+    border-bottom: 1px solid $primary-color;
+    -webkit-transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
+    &:hover,
+    &:focus {
+      border-color: lighten($primary-color, 50%);
+      background-color: lighten($primary-color, 50%);
+    }
+  }
+  .project__header a {
+    border-bottom: none;
+  }
+
   &__header {
     text-align: center;
     justify-content: center;
@@ -39,13 +53,30 @@
     padding-bottom: $main-padding;
     margin: $main-padding * 2 0;
   }
-
-  &__subhead-brief,
-  &__subhead-design,
-  &__subhead-code {
+  h3 {
     font-family: $brand-font-family;
     text-transform: uppercase;
     text-align: left;
+    color: lighten($primary-color, 30%);
+    padding-top: $main-padding * 0.5;
+    margin-bottom: $main-padding * 0.5;
+    &:before {
+      display: block;
+      content: "===";
+      color: lighten($primary-color, 30%);
+    }
+
+    &.project__subhead-brief,
+    &.project__subhead-design,
+    &.project__subhead-code {
+      color: $text-color;
+      padding: 0;
+      margin-bottom: 1rem;
+      display: block;
+      &:before {
+        display: none;
+      }
+    }
   }
 
   .frame {
@@ -81,6 +112,10 @@
 
 .itemlucion dt {
   color: $itemlucion;
+}
+
+.itemcroft dt {
+  color: $itemcroft;
 }
 
 /* ==== MEDIA QUERIES ==== */

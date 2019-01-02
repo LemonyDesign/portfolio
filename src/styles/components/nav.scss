@@ -208,6 +208,18 @@
   }
 }
 
+.itemcroft {
+  .siteheader {
+    background-color: $itemcroft;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemcroft, 20%);
+    }
+  }
+}
+
 /* ==== MEDIA QUERIES ==== */
 
 @media (max-width: 320px) {

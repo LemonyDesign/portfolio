@@ -21,9 +21,7 @@ class Home extends React.Component {
         <main className="main">
           <section className="panel constraint">
             <header className="panel__header">
-              <h2 className="panel__title">
-                There are two sides to every coin&hellip;
-              </h2>
+              <h2 className="panel__title">Two sides to every coin&hellip;</h2>
             </header>
             <p>
               A designer of more than 10 years, I am a recent FullStack /
@@ -40,6 +38,25 @@ class Home extends React.Component {
               <li className="portfolio__listitem">
                 <div className="ribbon">Made with React</div>
                 <NavLink
+                  to="/the-trip"
+                  activeClassName="active"
+                  className="portfolio__link"
+                >
+                  <img src="../../static/pi-ws-trip.jpg" />
+                  <span className="portfolio__info">
+                    Course project: React + Node
+                  </span>
+                  <h2 className="portfolio__title">The Trip</h2>
+                  <p>
+                    Project celebrating 50 Years of the Northern Poetry Library,
+                    with competition and digital platform built to display a
+                    growing poem.
+                  </p>
+                </NavLink>
+              </li>
+              <li className="portfolio__listitem">
+                <div className="ribbon">Made with React</div>
+                <NavLink
                   to="/poem-north"
                   activeClassName="active"
                   className="portfolio__link"
@@ -48,8 +65,8 @@ class Home extends React.Component {
                   <h2 className="portfolio__title">Poem of the North</h2>
                   <p>
                     Project celebrating 50 Years of the Northern Poetry Library,
-                    with competition and digital platform built to display a
-                    growing poem.
+                    with competition and digital platform displaying a growing
+                    poem.
                   </p>
                 </NavLink>
               </li>
@@ -63,8 +80,8 @@ class Home extends React.Component {
                   <img src="../../static/pi-ws-lucion.jpg" />
                   <h2 className="portfolio__title">Lucion Services</h2>
                   <p>
-                    Rework user journeys, functionality and design of website
-                    for growing risk assessment company
+                    Rework user journeys, functionality and design of site for
+                    expanding risk management company to improve SEO &amp; ROI
                   </p>
                 </NavLink>
               </li>
@@ -110,8 +127,8 @@ class Home extends React.Component {
                   <h2 className="portfolio__title">Northern Poetry Library</h2>
                   <p>
                     Part of a 2-year Heritage Lottery and Northumberland County
-                    Council project to bring new life to a special public
-                    library collection.
+                    Council project to bring new life to a public library
+                    collection.
                   </p>
                 </NavLink>
               </li>
@@ -126,6 +143,21 @@ class Home extends React.Component {
                   <p>
                     Website for bioethicist, disability activist and broadcaster
                     Tom Shakespeare, accessibility baked in.
+                  </p>
+                </NavLink>
+              </li>
+              <li className="portfolio__listitem">
+                <NavLink
+                  to="/stuartcroft"
+                  activeClassName="active"
+                  className="portfolio__link"
+                >
+                  <img src="../../static/pi-ws-sc.jpg" />
+                  <h2 className="portfolio__title">Stuart Croft Foundation</h2>
+                  <p>
+                    Grant applications website for a charitable body set up make
+                    accessible the legacy and archive of artist–filmmaker Stuart
+                    Croft.
                   </p>
                 </NavLink>
               </li>

@@ -19,7 +19,9 @@ class ItemUp extends React.Component {
         <Nav />
         <main className="main project">
           <header className="project__header constraint">
-            <h2 className="project__title">UP Motion Graphics Agency</h2>
+            <h2 className="project__title">
+              UP motion graphics &amp; CGI agency
+            </h2>
 
             <dl className="project__refs">
               <dt className="a">Date</dt>
@@ -40,19 +42,21 @@ class ItemUp extends React.Component {
               <div className="project__content">
                 <h3 className="project__subhead-brief">Brief</h3>
                 <p>
-                  Lemony Design's long-standing client, short-story advocate and
-                  jewellery afficionado Joanna Sterling, sought a recent
-                  redesign of her website The Casket, a well-respected platform
-                  for short stories, flash fiction – as well as being a display
-                  case for her magnificent collection of contemporary and period
-                  brooches. Somehow this all works together rather well!
+                  New website design for London–based UP motion graphics and CGI
+                  agency to accompany a revamping and targeting of their
+                  strengths and experience in the charity sector (working with
+                  clients that include Compassion in World Farming, the NHS, and
+                  Graze). The primary objective, to deliver a good-looking
+                  portfolio to display their motion and graphic work without
+                  compromising page speed. To keep load speedy with big files,
+                  we opted to serve direct from Amazon S3 as a static website.
                 </p>
               </div>
               <aside className="project__image">
                 <ZoomImage
-                  imageWidth={200}
-                  imageHeight={200}
-                  src="../../static/example-sketch.jpg"
+                  imageWidth={230}
+                  imageHeight={230}
+                  src="../../static/project-up-ipad.png"
                 />
               </aside>
             </div>
@@ -60,40 +64,39 @@ class ItemUp extends React.Component {
           <section className="project__section2 constraint">
             <section className="project__design">
               <h3 className="project__subhead-design">Design</h3>
-
               <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                Working closely with the client, we mapped a simple user journey
+                and designed a user interface that dramatically stages each
+                project. To this end, the client required full-page images and /
+                or video for each porfolio item.
               </p>
-
+              <h3>Challenges</h3>
               <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                To achieve the drama, I used a range of multiple background
+                image techniques to position central elements according to
+                device. Full-page video is the greatest challenge in terms of
+                finding the speed/quality trade-off, providing correctly
+                positioned loading stills and fallback images for mobile.
               </p>
             </section>
             <section className="project__code">
               <h3 className="project__subhead-code">Code</h3>
               <p>
-                The platform also brings to the fore her fine collection of
-                studio-recorded audio stories which are pushed to podcast
-                platforms upon publication.
+                Built on the{" "}
+                <a href="https://foundation.zurb.com/">Zurb Foundation</a>{" "}
+                framework, compiled with webpack, the site uses HTML5 data
+                attributes with JavaScript to &lsquo;swap in&rsquo; different
+                images / video html depending on device context, so as keep
+                speeds and asset size trim on smaller devices.
               </p>
               <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                The <a href="http://animejs.com/">Anime</a> JavaScript Animation
+                Engine is used for the creation of custom letter animation for
+                the entry page, and I chose <a href="https://plyr.io/">Plyr</a>{" "}
+                to provide a seamless full-page video experience.
               </p>
+              <h3>Further development</h3>
+              <p>Fetch blog posts for the home page via the Wordpress API</p>
             </section>
           </section>
         </main>

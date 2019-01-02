@@ -5,6 +5,9 @@ import Footer from "../components/Footer";
 import Home from "../components/Home";
 import Code from "../components/Code";
 import Design from "../components/Design";
+import ItemTrip from "../components/ItemTrip";
+import ItemBeer from "../components/ItemBeer";
+import ItemCorpse from "../components/ItemCorpse";
 import ItemPoem from "../components/ItemPoem";
 import ItemLucion from "../components/ItemLucion";
 import ItemUp from "../components/ItemUp";
@@ -12,6 +15,7 @@ import ItemCasket from "../components/ItemCasket";
 import ItemAldingbourne from "../components/ItemAldingbourne";
 import ItemNPL from "../components/ItemNPL";
 import ItemFarmer from "../components/ItemFarmer";
+import ItemCroft from "../components/ItemCroft";
 import "../styles/base/base.scss";
 import "../styles/components/app.scss";
 
@@ -31,6 +35,18 @@ function App() {
                 <Route exact path="/" component={Home} key="home" />
                 <Route path="/code" component={Code} key="code" />
                 <Route path="/design" component={Design} key="design" />
+                <Route path="/the-trip" component={ItemTrip} key="item-trip" />
+                <Route
+                  path="/vibrant-corpse"
+                  component={ItemCorpse}
+                  key="item-vibrant"
+                />
+                <Route
+                  path="/where-to-beer"
+                  component={ItemBeer}
+                  key="item-beer"
+                />
+
                 <Route
                   path="/poem-north"
                   component={ItemPoem}
@@ -57,6 +73,11 @@ function App() {
                   path="/farmer"
                   component={ItemFarmer}
                   key="item-farmer"
+                />
+                <Route
+                  path="/stuartcroft"
+                  component={ItemCroft}
+                  key="item-stuartcroft"
                 />
               </Switch>
             </RouteContainer>
