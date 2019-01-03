@@ -3,20 +3,7 @@
 @import "../base/_mixins.scss";
 
 .ribbon {
-  font-family: $brand-font-family;
-  overflow: hidden;
-  font-size: 1rem;
-  width: 240px;
-  position: absolute;
-  text-align: center;
-  line-height: 2.5;
-  letter-spacing: 1px;
-  top: 40px;
-  left: -60px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  background: #e43;
-  color: white;
+  display: none;
 }
 
 .home {
@@ -56,15 +43,6 @@
     margin-bottom: 0;
     img {
       margin-bottom: $main-padding;
-      filter: gray;
-      -webkit-filter: grayscale(1);
-      @include transition(all, 0.8s, ease-in-out);
-      &:hover {
-        -webkit-filter: grayscale(100%);
-        filter: none;
-        -webkit-transform: scale(1.01);
-        transform: scale(1.01);
-      }
     }
 
     p {
@@ -91,6 +69,24 @@
 }
 
 @media (min-width: 600px) {
+  .ribbon {
+    display: block;
+    font-family: $brand-font-family;
+    overflow: hidden;
+    font-size: 1rem;
+    width: 240px;
+    position: absolute;
+    text-align: center;
+    line-height: 2.5;
+    letter-spacing: 1px;
+    top: 40px;
+    left: -60px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background: #e43;
+    color: white;
+  }
+
   .portfolio {
     &__list {
       display: flex;
@@ -98,6 +94,17 @@
     }
     &__listitem {
       width: 50%;
+      img {
+        filter: gray;
+        -webkit-filter: grayscale(1);
+        @include transition(all, 0.8s, ease-in-out);
+        &:hover {
+          -webkit-filter: grayscale(100%);
+          filter: none;
+          -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+        }
+      }
     }
   }
 }

@@ -151,6 +151,18 @@
     }
   }
 }
+.itemtrip {
+  .siteheader {
+    background-color: $itemtrip;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemtrip, 20%);
+    }
+  }
+}
+
 .itemcasket {
   .siteheader {
     background-color: $itemcasket;
