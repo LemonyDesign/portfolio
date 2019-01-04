@@ -7,7 +7,8 @@ function Footer() {
       <footer className="sitefooter">
         <section className="constraint">
           <p>
-            Instagram: @LordMelburyPhotos
+            Twitter:&nbsp;
+            <a href="https://twitter.com/_traversing_">@_traversing_</a>
             <br />
             &copy; Melanie Ashby 2018
           </p>

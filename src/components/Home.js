@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../components/Nav";
 import { NavLink } from "react-router-dom";
 import "../styles/base/base.scss";
+import "../styles/base/panel.scss";
 import "../styles/components/home.scss";
 
 class Home extends React.Component {

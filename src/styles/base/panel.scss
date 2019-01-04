@@ -1,0 +1,60 @@
+@import "_normalize.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/* ==== MODULES ==== */
+
+.panel {
+  font-size: 1.3125rem; /*21px*/
+  padding-bottom: $main-padding * 2;
+  &__title {
+    text-align: center;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  p:last-child:after {
+    display: block;
+    content: "===";
+  }
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media (min-width: 600px) {
+  .panel {
+    margin-top: 2.5%;
+    margin-bottom: 0.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 801px) {
+  .panel {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .panel {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .panel {
+    font-size: 1.5rem; /*24px*/
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .panel {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}

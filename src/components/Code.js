@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import "../styles/base/base.scss";
+import "../styles/base/panel.scss";
 
 class Code extends React.Component {
   componentDidMount() {

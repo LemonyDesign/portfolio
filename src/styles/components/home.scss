@@ -94,17 +94,6 @@
     }
     &__listitem {
       width: 50%;
-      img {
-        filter: gray;
-        -webkit-filter: grayscale(1);
-        @include transition(all, 0.8s, ease-in-out);
-        &:hover {
-          -webkit-filter: grayscale(100%);
-          filter: none;
-          -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-        }
-      }
     }
   }
 }
@@ -118,6 +107,15 @@
 @media (min-width: 1025px) {
   .portfolio__listitem {
     width: 33.333334%;
+    img {
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      @include transition(all, 0.8s, ease-in-out);
+      &:hover {
+        -webkit-filter: grayscale(100%);
+        filter: none;
+      }
+    }
   }
   .portfolio__title {
     font-size: 1.3125rem;

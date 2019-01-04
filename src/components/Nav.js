@@ -54,7 +54,7 @@ class Nav extends React.Component {
           </div>
 
           <NavLink
-            to="/design"
+            to="/"
             activeClassName="active"
             className="navmain__nav nav--left"
             role="nav"
@@ -64,7 +64,7 @@ class Nav extends React.Component {
           </NavLink>
 
           <NavLink
-            to="/code"
+            to="/"
             activeClassName="active"
             className="navmain__nav nav--right"
             role="nav"

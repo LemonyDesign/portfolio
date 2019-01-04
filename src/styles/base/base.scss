@@ -22,7 +22,7 @@ body {
   font-family: $body-font-family;
   font-weight: 400;
   font-style: normal;
-  font-size: 100%;
+  font-size: 112.5%;
   margin: 0;
   padding: 0;
   background: $background-color;
@@ -81,7 +81,6 @@ h6 {
   font-weight: 600;
   line-height: 1.2;
 }
-
 p {
   margin: 0 0 $main-padding;
 }
@@ -90,26 +89,6 @@ a:hover {
   color: $primary-color;
   text-decoration: none;
   @include transition(color);
-}
-
-/* ==== MODULES ==== */
-
-.panel {
-  font-size: 1.125rem;
-  padding-bottom: $main-padding * 2;
-  &__title {
-    font-family: "arno-pro-display", serif;
-    font-weight: 600;
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  p:last-child {
-    margin-bottom: 0;
-  }
-  p:last-child:after {
-    display: block;
-    content: "===";
-  }
 }
 
 /* ==== HELPER CLASSES ==== */
@@ -147,12 +126,7 @@ a:hover {
 
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  .panel {
-    margin-top: 2.5%;
-    margin-bottom: 0.5%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+
   h2 {
     font-size: 1.563rem;
   }
@@ -163,24 +137,12 @@ a:hover {
 
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-  body {
-    font-size: 112.5%;
-  }
-  .panel {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
 }
 
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   .constraint {
     max-width: 995px;
-  }
-  .panel {
-    font-size: 1.3125rem;
-    margin-left: 20%;
-    margin-right: 20%;
   }
   h2 {
     font-size: 1.953rem;
@@ -196,19 +158,9 @@ a:hover {
   .constraint {
     max-width: 1200px;
   }
-  .panel {
-    margin-left: 25%;
-    margin-right: 25%;
-  }
 }
 
 @media (min-width: 1920px) {
-  /* bigguns */
-
-  .panel {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
   h2 {
     font-size: 2.441rem;
   }
