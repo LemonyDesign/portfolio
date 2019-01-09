@@ -31,7 +31,7 @@ class ItemUp extends React.Component {
               <dd className="b2">Taylor McKenzie / UP</dd>
 
               <dt className="c">URL</dt>
-              <dd className="c2">
+              <dd className="c2 project__url">
                 <a href="http://helloup.co.uk">helloup.co.uk</a>
               </dd>
             </dl>
@@ -54,8 +54,8 @@ class ItemUp extends React.Component {
               </div>
               <aside className="project__image">
                 <ZoomImage
-                  imageWidth={230}
-                  imageHeight={230}
+                  imageWidth={300}
+                  imageHeight={300}
                   src="../../static/project-up-ipad.png"
                 />
               </aside>

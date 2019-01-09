@@ -30,7 +30,7 @@ class ItemCorpse extends React.Component {
               <dd className="b2">At Constructor Labs</dd>
 
               <dt className="c">URL</dt>
-              <dd className="c2">
+              <dd className="c2 project__url">
                 <a href="https://vibrant-corpse.herokuapp.com/">
                   vibrant-corpse.herokuapp.com
                 </a>

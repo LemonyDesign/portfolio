@@ -1,5 +1,14 @@
+@import "../base/_normalize.scss";
+@import "../base/_variables.scss";
+@import "../base/_mixins.scss";
 /* ==== ZOOM IMAGE ==== */
 
+.project__image {
+  text-align: center;
+}
+.image-frame {
+  margin: 0 auto;
+}
 img {
   margin: auto;
 }
@@ -11,6 +20,6 @@ img {
   right: 0;
   bottom: 0;
   display: none;
-  background: white;
+  background-color: lighten($primary-color, 50%);
   transform: translateZ(0);
 }

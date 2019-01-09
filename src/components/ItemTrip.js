@@ -30,7 +30,7 @@ class ItemTrip extends React.Component {
               <dd className="b2">Constructor Labs, Team: The Trip</dd>
 
               <dt className="c">URL</dt>
-              <dd className="c2">
+              <dd className="c2 project__url">
                 <a href="https://github.com/The-Trip/The-Trip">
                   github.com/The-Trip/The-Trip
                 </a>

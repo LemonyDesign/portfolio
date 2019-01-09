@@ -29,7 +29,7 @@ class ItemNPL extends React.Component {
               <dd className="b2">Taylor McKenzie / UP</dd>
 
               <dt className="c">URL</dt>
-              <dd className="c2">
+              <dd className="c2 project__url">
                 <a href="http://helloup.co.uk">helloup.co.uk</a>
               </dd>
             </dl>

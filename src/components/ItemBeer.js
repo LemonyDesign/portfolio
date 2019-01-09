@@ -30,7 +30,7 @@ class ItemBeer extends React.Component {
               <dd className="b2">At Constructor Labs</dd>
 
               <dt className="c">URL</dt>
-              <dd className="c2">
+              <dd className="c2 project__url">
                 <a href="https://where-to-beer.herokuapp.com/">
                   where-to-beer.herokuapp.com
                 </a>

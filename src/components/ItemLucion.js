@@ -29,8 +29,8 @@ class ItemLucion extends React.Component {
               <dt className="b">Client</dt>
               <dd className="b2">Arttia Creative > Lucion Services</dd>
 
-              <dt className="c">URL</dt>
-              <dd className="c2">
+              <dt className="c project__urltitle">URL</dt>
+              <dd className="c2 project__url">
                 <a href="http://www.lucionservices.com/">lucionservices.com</a>
               </dd>
             </dl>
@@ -48,16 +48,17 @@ class ItemLucion extends React.Component {
                   <a href="https://arttia.co.uk/">Arttia Creative</a>, the
                   underlying aim has been to improve traffic to the website,
                   address UX issues for customer–facing and employee journeys,
-                  and bring clarity via significant changes to the UI and
-                  design. There has been radical improvement for SEO that is
-                  continuing to grow.
+                  and bring clarity via significant changes to the UI. In
+                  combination with a foundational SEO strategy, the site
+                  modifications are resulting in a marked steady growth in site
+                  visits.
                 </p>
               </div>
               <aside className="project__image">
                 <ZoomImage
-                  imageWidth={200}
-                  imageHeight={200}
-                  src="../../static/example-sketch.jpg"
+                  imageWidth={300}
+                  imageHeight={300}
+                  src="../../static/project-lucion-ipad.png"
                 />
               </aside>
             </div>

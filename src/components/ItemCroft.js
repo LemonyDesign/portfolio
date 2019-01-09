@@ -31,7 +31,7 @@ class ItemCroft extends React.Component {
               </dd>
 
               <dt className="c">URL</dt>
-              <dd className="c2">
+              <dd className="c2 project__url">
                 <a href="http://www.stuartcroftfoundation.org/">
                   stuartcroftfoundation.org
                 </a>
