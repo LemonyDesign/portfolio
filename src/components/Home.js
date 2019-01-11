@@ -184,6 +184,27 @@ class Home extends React.Component {
                   </p>
                 </NavLink>
               </li>
+
+              <li className="portfolio__listitem">
+                <NavLink
+                  to="/aldingbourne"
+                  activeClassName="active"
+                  className="portfolio__link"
+                >
+                  <figure className="portfolio__figure">
+                    <img src="../../static/pi-ws-aldingbourne.jpg" />
+                    <figcaption className="portfolio__figcaption">
+                      <h3>View Project</h3>
+                    </figcaption>
+                  </figure>
+
+                  <h2 className="portfolio__title">Long Bench Scheme</h2>
+                  <p>
+                    One-page mini-site and linked sales portal for Aldingbourne
+                    Trust&rsquo;s Long Bench scheme.
+                  </p>
+                </NavLink>
+              </li>
               <li className="portfolio__listitem">
                 <NavLink
                   to="/the-trip"
@@ -204,6 +225,26 @@ class Home extends React.Component {
                     Plan your holiday: look-up and scrapbook flights and
                     accommodation, and invite friends to crowdsource suggestions
                     for your vacay.
+                  </p>
+                </NavLink>
+              </li>
+              <li className="portfolio__listitem">
+                <NavLink
+                  to="/vibrant-corpse"
+                  activeClassName="active"
+                  className="portfolio__link"
+                >
+                  <figure className="portfolio__figure">
+                    <img src="../../static/pi-ws-vibrant.jpg" />
+                    <figcaption className="portfolio__figcaption">
+                      <h3>View Project</h3>
+                    </figcaption>
+                  </figure>
+                  <span className="portfolio__info">Course project: React</span>
+                  <h2 className="portfolio__title">Vibrant Corpse</h2>
+                  <p>
+                    A brainstorming app based on randomized word combinations
+                    (adjective-noun / adverb-verb) fetched from the Words API.
                   </p>
                 </NavLink>
               </li>

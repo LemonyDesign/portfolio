@@ -23,14 +23,16 @@ class ItemFarmer extends React.Component {
 
             <dl className="project__refs">
               <dt className="a">Date</dt>
-              <dd className="a2">Spring 2018</dd>
+              <dd className="a2">Launch October 2017</dd>
 
               <dt className="b">Client</dt>
-              <dd className="b2">Taylor McKenzie / UP</dd>
+              <dd className="b2">Tom Shakespeare</dd>
 
               <dt className="c">URL</dt>
               <dd className="c2 project__url">
-                <a href="http://helloup.co.uk">helloup.co.uk</a>
+                <a href="https://farmerofthoughts.co.uk/">
+                  farmerofthoughts.co.uk
+                </a>
               </dd>
             </dl>
           </header>
@@ -40,19 +42,23 @@ class ItemFarmer extends React.Component {
               <div className="project__content">
                 <h3 className="project__subhead-brief">Brief</h3>
                 <p>
-                  Lemony Design's long-standing client, short-story advocate and
-                  jewellery afficionado Joanna Sterling, sought a recent
-                  redesign of her website The Casket, a well-respected platform
-                  for short stories, flash fiction – as well as being a display
-                  case for her magnificent collection of contemporary and period
-                  brooches. Somehow this all works together rather well!
+                  Personal website for academic, philosopher and disability
+                  rights campaigner Professor Tom Shakespeare. The HTML is
+                  written from the ground up to conform to WC3 AA web content
+                  accessibility guidelines, providing behind–the–scenes
+                  accessibility for screen readers and keyboard capabilities.
+                  Shakespeare &ndash; like his namesake &ndash; is a prolific
+                  writer and broadcaster, so the site aims at providing
+                  easy–on–the–eyes and elegant stylings for readability of
+                  articles. We also worked on splitting content into grouped
+                  content and serializations where appropriate.
                 </p>
               </div>
               <aside className="project__image">
                 <ZoomImage
-                  imageWidth={200}
-                  imageHeight={200}
-                  src="../../static/example-sketch.jpg"
+                  imageWidth={300}
+                  imageHeight={300}
+                  src="../../static/project-farmer-ipad.png"
                 />
               </aside>
             </div>
@@ -62,37 +68,62 @@ class ItemFarmer extends React.Component {
               <h3 className="project__subhead-design">Design</h3>
 
               <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                Based on a Tom Paine quote &lsquo;I am a farmer of thoughts, and
+                all the crops I raise I give away&rsquo;, the home page presents
+                an 18th–Century map of fields, with a full–page image hover
+                effect over areas of the map that present different categories.
+                Selecting a category gives a pop–up to lead each section and
+                entice further investigation. This changes for responsive views
+                on tablet and mobile, where the hover effect and pop–ups are
+                replaced, to serve categories with their lead–in content
+                overlaid on images.
               </p>
-
+              <ZoomImage
+                imageWidth={360}
+                imageHeight={235}
+                src="../../static/farmer-image.png"
+              />
               <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                With readability as the primary objective, UI research and drive
+                has focused on contrast, line-length and typography, with user
+                testing across devices and aspects, to ensure a comfortable and
+                simple reading experience.
               </p>
             </section>
             <section className="project__code">
               <h3 className="project__subhead-code">Code</h3>
               <p>
-                The platform also brings to the fore her fine collection of
-                studio-recorded audio stories which are pushed to podcast
-                platforms upon publication.
+                The site is built on the Wordpress CMS, with custom post types
+                and taxonomies providing extensive categorisation of content
+                (single and grouped articles, blog posts, events, daily quotes).
+                Each section features a simple–to–use AJAX search, to make the
+                wealth of articles easy–to–browse.
               </p>
+
+              <p>With accessibily a core concern, I took a variety of tacks:</p>
+              <ul>
+                <li>
+                  Semantic HTML codebase, deploying ARIA and following{" "}
+                  <a href="https://a11yproject.com/">A11Y</a> recommendations to
+                  build a best-practice structure for screen-readers and
+                  keyboard.
+                </li>
+                <li>
+                  Dynamic site map which provides full access to all the
+                  articles.
+                </li>
+                <li>
+                  Link lists (designed for touch devices and as screen-reader
+                  navigational aids) to provide multiple points of entry.
+                </li>
+              </ul>
+              <h3>CHALLEGES</h3>
               <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                One of the unanticipatedly tricksy tasks was in part-automating
+                the import of content from Tom&rsquo;s Disabled Lives Blogger
+                blog to Wordpress, requiring careful re-mapping of fields
+                between the different systems, via Excel spreadsheets to XML
+                import.
               </p>
             </section>
           </section>

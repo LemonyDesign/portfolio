@@ -44,17 +44,20 @@ body {
 .itemup .sitefooter {
   color: $itemup;
 }
-.itemcasket .sitefooter {
+.itemcasket .sitefooter * {
   color: $itemcasket;
 }
-.itemaldingbourne .sitefooter {
+.itemaldingbourne .sitefooter * {
   color: $itemaldingbourne;
 }
-.itemfarmer .sitefooter {
+.itemfarmer .sitefooter * {
   color: $itemfarmer;
 }
-.itemnpl .sitefooter {
+.itemnpl .sitefooter * {
   color: $itemnpl;
+}
+.itemcorpse .sitefooter * {
+  color: $itemcorpse;
 }
 
 .constraint {

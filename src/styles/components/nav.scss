@@ -16,9 +16,7 @@
     display: flex;
     font-size: 2rem;
   }
-  &__nav.active {
-    color: $text-color;
-  }
+
   .nav--left {
     justify-content: flex-start;
     align-items: center;
@@ -121,6 +119,11 @@
 .portfolio-item .navmain {
   &__name {
     color: $background-color;
+    opacity: 1;
+    @include transition(opacity, 0.3s, ease-out);
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -227,6 +230,18 @@
     &__nav,
     &__descriptor {
       color: darken($itemcroft, 20%);
+    }
+  }
+}
+
+.itemcorpse {
+  .siteheader {
+    background-color: $itemcorpse;
+  }
+  .navmain {
+    &__nav,
+    &__descriptor {
+      color: darken($itemcorpse, 20%);
     }
   }
 }

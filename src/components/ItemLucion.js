@@ -68,9 +68,17 @@ class ItemLucion extends React.Component {
               <h3 className="project__subhead-design">Design</h3>
 
               <p>
-                Research user journey using analytics tools to re–map, making
+                Research user journeys using analytics tools to re–map, making
                 changes in categorisation and structure to shorten journeys
                 where possible, clarify, and make more efficient.
+              </p>
+              <p>
+                Install the{" "}
+                <a href="http://astrum.nodividestudio.com/">
+                  Astrum Pattern Library
+                </a>{" "}
+                on the development site to help analyse and pick apart
+                conflicting and duplicated css
               </p>
 
               <p>
@@ -106,8 +114,8 @@ class ItemLucion extends React.Component {
               <p>
                 The original developers had flown-in generalised custom field
                 code rather than developing for site needs using Wordpress' own
-                code, so there was a percentage of redundant code that needed
-                removing and redeploying so as to improve performance.
+                code, so there was a percentage of code that needed refactoring
+                or removing so as to improve performance.
               </p>
             </section>
           </section>

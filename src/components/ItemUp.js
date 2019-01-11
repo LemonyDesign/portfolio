@@ -25,7 +25,7 @@ class ItemUp extends React.Component {
 
             <dl className="project__refs">
               <dt className="a">Date</dt>
-              <dd className="a2">Spring 2018</dd>
+              <dd className="a2">Launch March 2018</dd>
 
               <dt className="b">Client</dt>
               <dd className="b2">Taylor McKenzie / UP</dd>

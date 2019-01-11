@@ -23,14 +23,18 @@ class ItemAldingbourne extends React.Component {
 
             <dl className="project__refs">
               <dt className="a">Date</dt>
-              <dd className="a2">Spring 2018</dd>
+              <dd className="a2">August 2017</dd>
 
               <dt className="b">Client</dt>
-              <dd className="b2">Taylor McKenzie / UP</dd>
+              <dd className="b2">
+                The Aldingbourne Trust
+                <br />
+                Contractor: Taylor McKenzie / UP
+              </dd>
 
               <dt className="c">URL</dt>
               <dd className="c2 project__url">
-                <a href="http://helloup.co.uk">helloup.co.uk</a>
+                <a href="http://www.longbench.org/">www.longbench.org</a>
               </dd>
             </dl>
           </header>
@@ -40,19 +44,23 @@ class ItemAldingbourne extends React.Component {
               <div className="project__content">
                 <h3 className="project__subhead-brief">Brief</h3>
                 <p>
-                  Lemony Design's long-standing client, short-story advocate and
-                  jewellery afficionado Joanna Sterling, sought a recent
-                  redesign of her website The Casket, a well-respected platform
-                  for short stories, flash fiction – as well as being a display
-                  case for her magnificent collection of contemporary and period
-                  brooches. Somehow this all works together rather well!
+                  A promotional one–page website for The Aldingbourne Trust, a
+                  charity that supports people with learning difficulties, based
+                  in Sussex. The Longbench Project, run in conjunction with Arun
+                  District Council, invites people to purchase a memorial slat
+                  in the Long Bench on Littlehampton seafront. The mini–site has
+                  been designed as a &lsquo;brochure&rsquo; for the project,
+                  whose single, clear call–to–action links through to the
+                  Trust&rsquo;s website, where we designed and embedded a
+                  purpose–built PayPal form so that visitors could order a bench
+                  slat (on the Wordpress platform).
                 </p>
               </div>
               <aside className="project__image">
                 <ZoomImage
-                  imageWidth={200}
-                  imageHeight={200}
-                  src="../../static/example-sketch.jpg"
+                  imageWidth={300}
+                  imageHeight={300}
+                  src="../../static/project-aldingbourne-ipad.png"
                 />
               </aside>
             </div>
@@ -62,37 +70,23 @@ class ItemAldingbourne extends React.Component {
               <h3 className="project__subhead-design">Design</h3>
 
               <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
-              </p>
-
-              <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                The aim, to create a simple and attractive marketing tool to sit
+                alongside Aldingbourne&rsquo;s main website, driving traffic to
+                the on–site purchase page. The mini–site gives full view of the
+                lovely photographs taken for the Long Bench project. The main
+                site allows purchase via a purpose–designed form which is
+                programmed to accept discount coupons, to enable slat type, font
+                and create a message for inscription, before payment.
               </p>
             </section>
             <section className="project__code">
               <h3 className="project__subhead-code">Code</h3>
               <p>
-                The platform also brings to the fore her fine collection of
-                studio-recorded audio stories which are pushed to podcast
-                platforms upon publication.
-              </p>
-              <p>
-                The redesign also involved a re-configuration of the UX, with an
-                integrated filtering system for her ever-expanding stable of
-                fiction, providing a solid foundation as an online publisher of
-                quality short stories, making them accessible for readers who
-                can now refine by type (flash, story or audio), mood, collection
-                and author.
+                The main site allows purchase via a custom Wordpress form with
+                logic and validation to determine if the purchaser has a
+                discount coupon, to enable selection of slat type, font
+                (viewable) and create a restricted-length message for
+                inscription, before payment.
               </p>
             </section>
           </section>

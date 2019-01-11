@@ -27,7 +27,8 @@ class ItemCroft extends React.Component {
 
               <dt className="b">Client</dt>
               <dd className="b2">
-                Taylor McKenzie (For Stuart Croft Foundation)
+                Stuart Croft Foundation <br />
+                Contractor: Taylor McKenzie / UP
               </dd>
 
               <dt className="c">URL</dt>
@@ -48,16 +49,16 @@ class ItemCroft extends React.Component {
                   website for the Stuart Croft Foundation, a charitable body set
                   up make accessible the legacy and archive of artist–filmmaker
                   Stuart Croft. The primary aim of the site, alongside
-                  exhibiting Croft's moving–image artworks, is to establish a
-                  grant-application system for new film-makers, research,
-                  publications and exhibitions.
+                  exhibiting Croft&rsquo;s moving–image artworks, is to
+                  establish a grant-application system for new film-makers,
+                  research, publications and exhibitions.
                 </p>
               </div>
               <aside className="project__image">
                 <ZoomImage
-                  imageWidth={200}
-                  imageHeight={200}
-                  src="../../static/project-sc.png"
+                  imageWidth={300}
+                  imageHeight={300}
+                  src="../../static/project-sc-ipad.png"
                 />
               </aside>
             </div>
@@ -67,10 +68,22 @@ class ItemCroft extends React.Component {
               <h3 className="project__subhead-design">Design</h3>
 
               <p>
-                Gallery of Croft archive films, with elegant hover to summary
-                titles, and pop–up to view uncluttered films hosted by Vimeo in
-                the browser. Admin have the ability to add to and maintain the
-                archive in the Wordpress dashboard.
+                Site design based on{" "}
+                <a href="https://themeforest.net/item/enigma-creative-responsive-minimal-html-template/12271889">
+                  Enigma Responsive HTML template
+                </a>{" "}
+                selected and supplied by my contractor (UP), along with a PSD
+                template with design requirements. I deconstructed the template
+                into components, and using Hammer for Mac static site generator
+                created SCSS files that could them be safely and strategically
+                adapted.
+              </p>
+              <p>
+                Custom design features include a gallery of Croft&rsquo;s
+                archive films, with elegant hover to summary titles, and pop–up
+                to view uncluttered films hosted by Vimeo in the browser. Admin
+                have the ability to add to and maintain the archive in the
+                Wordpress dashboard.
               </p>
 
               <p>
