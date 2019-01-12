@@ -22,7 +22,6 @@ class Home extends React.Component {
         <main className="main">
           <section className="panel constraint">
             <header className="panel__header">
-              {/* <h2 className="panel__title">Two sides to every coin&hellip;</h2> */}
               <p>
                 A frontend designer-developer with 10+ years experience, I
                 practice clear, intuitive UI design, and craft eloquent code.
@@ -35,12 +34,12 @@ class Home extends React.Component {
               <ul className="menu--settings panel__nav">
                 <li>
                   <a href="../../static/pi-ws-pon.jpg" download>
-                    Download CV&nbsp; <i class="fas fa-file-download" />
+                    My CV&nbsp; <i className="fas fa-file-download" />
                   </a>
                 </li>
                 <li>
                   <a href="https://github.com/LemonyDesign">
-                    Github&nbsp; <i class="fab fa-github" />
+                    Github&nbsp; <i className="fab fa-github" />
                   </a>
                 </li>
               </ul>
@@ -62,7 +61,7 @@ class Home extends React.Component {
                     </figcaption>
                   </figure>
                   <span className="portfolio__info">
-                    Course project: React + Node + PostgreSQL
+                    Course: React + Node + PostgreSQL
                   </span>
                   <h2 className="portfolio__title">
                     The Trip <span>2018</span>
@@ -70,7 +69,7 @@ class Home extends React.Component {
                   <p>
                     Plan your holiday: look-up and scrapbook flights and
                     accommodation, and invite friends to crowdsource suggestions
-                    for your vacay.
+                    for your vacation.
                   </p>
                 </NavLink>
               </li>
@@ -86,9 +85,7 @@ class Home extends React.Component {
                       <h3>View Project</h3>
                     </figcaption>
                   </figure>
-                  <span className="portfolio__info">
-                    Course project: React + Node
-                  </span>
+                  <span className="portfolio__info">Course: React + Node</span>
                   <h2 className="portfolio__title">
                     Vibrant Corpse <span>2018</span>
                   </h2>
