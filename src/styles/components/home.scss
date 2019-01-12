@@ -10,11 +10,11 @@
   background: $black;
   .panel {
     color: $background-color;
-    margin-top: $main-padding;
     &__nav {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      margin-bottom: $main-padding * 0.5;
       li {
         width: 50%;
         padding-left: $main-padding;

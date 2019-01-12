@@ -26,8 +26,8 @@ class ItemCorpse extends React.Component {
               <dt className="a">Date</dt>
               <dd className="a2">Autumn 2018</dd>
 
-              <dt className="b">Course Exercise (Solo)</dt>
-              <dd className="b2">At Constructor Labs</dd>
+              <dt className="b">Course</dt>
+              <dd className="b2">Constructor Labs, solo project</dd>
 
               <dt className="c">URL</dt>
               <dd className="c2 project__url">

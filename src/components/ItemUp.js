@@ -48,8 +48,8 @@ class ItemUp extends React.Component {
                   clients that include Compassion in World Farming, the NHS, and
                   Graze). The primary objective, to deliver a good-looking
                   portfolio to display their motion and graphic work without
-                  compromising page speed. To keep load speedy with big files,
-                  we opted to serve direct from Amazon S3 as a static website.
+                  compromising page speed. To keep load speedy with big files, I
+                  opted to deploy on AWS as a static website.
                 </p>
               </div>
               <aside className="project__image">

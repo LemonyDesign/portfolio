@@ -26,8 +26,8 @@ class ItemTrip extends React.Component {
               <dt className="a">Date</dt>
               <dd className="a2">Autumn 2018</dd>
 
-              <dt className="b">Course Exercise</dt>
-              <dd className="b2">Constructor Labs, Team: The Trip</dd>
+              <dt className="b">Course</dt>
+              <dd className="b2">Constructor Labs, team project</dd>
 
               <dt className="c">URL</dt>
               <dd className="c2 project__url">

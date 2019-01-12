@@ -37,6 +37,7 @@
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 0;
+    margin-top: 0;
 
     dt {
       width: 30%;
@@ -83,7 +84,7 @@
     background-color: lighten($primary-color, 50%);
     padding-top: $main-padding;
     padding-bottom: $main-padding;
-    margin: $main-padding * 2 0;
+    margin: $main-padding * 2.5 0;
   }
   &__section1,
   &__section2 {
@@ -105,7 +106,6 @@
     text-transform: uppercase;
     text-align: left;
     color: lighten($primary-color, 30%);
-    padding-top: $main-padding * 0.5;
     margin-bottom: $main-padding * 0.5;
     &:before {
       display: block;
@@ -118,7 +118,8 @@
     &.project__subhead-code {
       color: $text-color;
       padding: 0;
-      margin-bottom: 1rem;
+      margin-top: $main-padding * 2;
+      margin-bottom: $main-padding;
       display: block;
       &:before {
         display: none;
@@ -208,7 +209,6 @@
 
 @media (min-width: 600px) {
   .project {
-    margin-top: $main-padding * 2;
     margin-bottom: $main-padding * 2;
     &__header,
     &__brief,
@@ -230,6 +230,7 @@
     &__section1 {
       padding-top: $main-padding * 1.5;
       padding-bottom: $main-padding * 2;
+      // margin: $main-padding * 2 0;
     }
 
     &__header {
@@ -298,7 +299,7 @@
 
 @media (min-width: 1025px) {
   .project {
-    margin-top: $main-padding * 3;
+    margin-top: $main-padding * 2;
   }
 }
 

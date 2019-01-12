@@ -59,6 +59,18 @@ body {
 .itemcorpse .sitefooter * {
   color: $itemcorpse;
 }
+.itempoem .sitefooter * {
+  color: $itempoem;
+}
+.itemlucion .sitefooter * {
+  color: $itemlucion;
+}
+.itemcroft .sitefooter * {
+  color: $itemcroft;
+}
+.itemtrip .sitefooter * {
+  color: $itemtrip;
+}
 
 .constraint {
   padding-left: $main-padding * 2;

@@ -37,14 +37,14 @@ class Nav extends React.Component {
               </NavLink>
 
               <NavLink
-                to="/code"
+                to="/"
                 activeClassName="active"
                 className="navmain__descriptor descriptor--code"
               >
                 {this.joinArr(arrCode)}
               </NavLink>
               <NavLink
-                to="/design"
+                to="/"
                 activeClassName="active"
                 className="navmain__descriptor descriptor--design"
               >
