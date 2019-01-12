@@ -23,7 +23,7 @@ class ItemNPL extends React.Component {
 
             <dl className="project__refs">
               <dt className="a">Date</dt>
-              <dd className="a2">2016 &ndash; 2018</dd>
+              <dd className="a2">2016 &ndash; 2017</dd>
 
               <dt className="b">Client</dt>
               <dd className="b2">Northumberland County Council</dd>

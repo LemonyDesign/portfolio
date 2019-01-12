@@ -126,19 +126,17 @@ class ItemTrip extends React.Component {
             <section className="project__code">
               <h3 className="project__subhead-code">Tech stack</h3>
               <p>
-                The app's front end is built with React, Redux, and
+                The app&rsquo;s front end is built with React, Redux, and
                 React-Router, with cookie parser for login sessions; moment,
-                datepicker and airport codes for flights &ndash; and a try-out
-                of new React hooks.
+                datepicker and airport codes for flights &ndash; and an
+                experiment in applying new React hooks.
               </p>
               <p>
                 The back end uses Express and Node.js with PostgreSQL, Passport
                 &amp; BCrypt for authentification. Web sockets (for instaneously
                 pushing data to multiple users) is under development.
               </p>
-              <p>
-                Dev tools: we use ES Lint with Prettier, and Jest for testing.
-              </p>
+              <p>Dev tools: ES Lint with Prettier, and Jest for testing.</p>
               <h3>Contribution to the Project</h3>
               <p>
                 The Trip members (Phil Berryman, Chris Phillips, Tom Bast and
@@ -146,13 +144,26 @@ class ItemTrip extends React.Component {
                 period of two weeks on the project thus far.
               </p>
               <p>
-                In addition to collaborating on figuring out the intial database
-                map and seeding it, my contributions to the project include:
-                writing of html schema with semantic-bem; component creation,
-                hierarchy &amp; refactoring; SASS, user interface planning and
-                design; React-Router functionality, views and user-journey
-                mapping. When designing Trip views, I incorporated a server-side
-                post of Unsplash images to the database.
+                In addition to collaborating on mapping and seeding the intial
+                database, my contributions to the project include:{" "}
+                <ul>
+                  <li>
+                    Write HTML schema, integrate SASS and create components with
+                    semantic-bem framework
+                  </li>
+                  <li>
+                    Wireframe, plan and design user interface, deploying views
+                    for incoming data, and toggling css class states.
+                  </li>
+                  <li>Map user journeys and assign views with React-Router.</li>
+                  <li>
+                    Incorporate fetch of Unsplash image (for each trip) to the
+                    /trip POST endpoint in node.
+                  </li>
+                  <li>
+                    Changes to component hierarchy &amp; code refactoring.
+                  </li>
+                </ul>
               </p>
               <h3>In progress</h3>
               <p>
