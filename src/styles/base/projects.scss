@@ -199,6 +199,13 @@
   }
 }
 
+.itemkenric {
+  dt,
+  .project__url a::after {
+    color: $itemkenric;
+  }
+}
+
 /* ==== MEDIA QUERIES ==== */
 
 @media (max-width: 320px) {

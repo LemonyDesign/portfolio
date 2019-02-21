@@ -49,7 +49,8 @@ class ItemUp extends React.Component {
                   Graze). The primary objective, to deliver a good-looking
                   portfolio to display their motion and graphic work without
                   compromising page speed. To keep load speedy with big files, I
-                  opted to deploy on AWS as a static website.
+                  opted to deploy on AWS as a static website, pulling in posts
+                  from their Wordpress blog with a fetch.
                 </p>
               </div>
               <aside className="project__image">
@@ -90,13 +91,17 @@ class ItemUp extends React.Component {
                 speeds and asset size trim on smaller devices.
               </p>
               <p>
+                Vanilla JS fetch from the Wordpress Rest API, so the client can
+                update with 3 latest posts from 'display on website' category
+                and custom meta for dedicated excerpt + automated fallback to
+                Wordpress excerpt.
+              </p>
+              <p>
                 The <a href="http://animejs.com/">Anime</a> JavaScript Animation
                 Engine is used for the creation of custom letter animation for
                 the entry page, and I chose <a href="https://plyr.io/">Plyr</a>{" "}
                 to provide a seamless full-page video experience.
               </p>
-              <h3>Further development</h3>
-              <p>Fetch blog posts for the home page via the Wordpress API</p>
             </section>
           </section>
         </main>

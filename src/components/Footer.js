@@ -11,6 +11,10 @@ function Footer() {
               Instagram:&nbsp; _traversal_
             </a>
             <br />
+            <a href="https://twitter.com/_traversing_">
+              Twitter:&nbsp; _traversing_
+            </a>
+            <br />
             &copy; Melanie Ashby 2018
           </p>
         </section>

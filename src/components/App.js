@@ -16,6 +16,7 @@ import ItemAldingbourne from "../components/ItemAldingbourne";
 import ItemNPL from "../components/ItemNPL";
 import ItemFarmer from "../components/ItemFarmer";
 import ItemCroft from "../components/ItemCroft";
+import ItemKenric from "../components/ItemKenric";
 import "../styles/base/base.scss";
 import "../styles/components/app.scss";
 
@@ -78,6 +79,11 @@ function App() {
                   path="/stuartcroft"
                   component={ItemCroft}
                   key="item-stuartcroft"
+                />
+                <Route
+                  path="/kenric"
+                  component={ItemKenric}
+                  key="item-kenric"
                 />
               </Switch>
             </RouteContainer>

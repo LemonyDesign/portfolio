@@ -29,11 +29,11 @@ class Home extends React.Component {
                 frontend and backend technologies like React (with Redux) and
                 Node with PostgreSQL that bring meaningful functionality to the
                 creation of graceful working interfaces.{" "}
-                <em>Currently learning: TypeScript and GraphQL</em>
+                <em>Currently focusing on React testing with Jest</em>
               </p>
               <ul className="menu--settings panel__nav">
                 <li>
-                  <a href="../../static/pi-ws-pon.jpg" download>
+                  <a href="../../static/MelAshby-CV2019.pdf" download>
                     My CV&nbsp; <i className="fas fa-file-download" />
                   </a>
                 </li>
@@ -274,6 +274,28 @@ class Home extends React.Component {
                     Part of a 2-year Heritage Lottery and Northumberland County
                     Council project to bring new life to a public library
                     collection.
+                  </p>
+                </NavLink>
+              </li>
+              <li className="portfolio__listitem">
+                <NavLink
+                  to="/kenric"
+                  activeClassName="active"
+                  className="portfolio__link"
+                >
+                  <figure className="portfolio__figure">
+                    <img src="../../static/pi-ws-kenric.jpg" />
+                    <figcaption className="portfolio__figcaption">
+                      <h3>View Project</h3>
+                    </figcaption>
+                  </figure>
+
+                  <h2 className="portfolio__title">
+                    Kenric <span>2016-18</span>
+                  </h2>
+                  <p>
+                    Wesbite with GoCardless and Filemaker database integration
+                    to revive an ailing membership organisation.
                   </p>
                 </NavLink>
               </li>
